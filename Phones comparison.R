@@ -10,7 +10,7 @@ require(purrr)
 require(ggmap)
 
 ## load data
-filepath.1 <- "C:/Users/moctar.aboubacar/Desktop/mVAM-EPR-CLEAR/mVAM/mVAM Phones/mVAM_panel.csv"
+filepath.1 <- here::here("data", "mVAM_panel.csv")
 dat <- read.csv(filepath.1)
 as.tbl(dat)
 str(dat)
